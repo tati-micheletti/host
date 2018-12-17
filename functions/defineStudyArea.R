@@ -51,12 +51,12 @@ defineStudyArea <- function(testArea = NULL, specificTestArea = NULL, mapSubset 
       if (specificTestArea == "boreal") {
         if (is.null(mapSubset)) {
           message(crayon::yellow("Test area is TRUE, specificTestArea is 'boreal', and mapSubset is NULL. Cropping and masking to the whole Boreal."))
-          rP <- prepInputs(url = "http://206.167.182.7/BAM/dataset/EnvironmentCanada/Brandt_boreal.zip",
+          rP <- reproducible::prepInputs(url = "http://206.167.182.7/BAM/dataset/EnvironmentCanada/Brandt_boreal.zip",
                            destinationPath = destinationFolder
           )
         }
         if (!is.null(mapSubset) && mapSubset != "Canada") {
-          sA <- prepInputs(url = "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip",
+          sA <- reproducible::prepInputs(url = "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip",
                            targetFile = "gpr_000b11a_e.shp",
                            alsoExtract = "similar",
                            destinationPath = destinationFolder) %>%
@@ -67,7 +67,7 @@ defineStudyArea <- function(testArea = NULL, specificTestArea = NULL, mapSubset 
                         ". Please provide a Canadian province name in English for subsetMap, ",
                         "or use 'NULL' (does not subset boreal, dangerous when dealing with higher resolution)."))
           }
-          rP <- prepInputs(url = "https://drive.google.com/open?id=0B_2riEic8l1mYW1SaVphNk9MaUdrRWhLYU1XUHdQcWhyMkxn", 
+          rP <- reproducible::prepInputs(url = "https://drive.google.com/open?id=0B_2riEic8l1mYW1SaVphNk9MaUdrRWhLYU1XUHdQcWhyMkxn", 
                            alsoExtract = "similar",
                            studyArea = sA,
                            destinationPath = destinationFolder)
@@ -76,14 +76,14 @@ defineStudyArea <- function(testArea = NULL, specificTestArea = NULL, mapSubset 
         }
         if (!is.null(mapSubset) && mapSubset == "Canada") {
           message(crayon::yellow("Test area is TRUE. Cropping and masking to the Canadian Boreal."))
-          rP <- prepInputs(url = "https://drive.google.com/open?id=0B_2riEic8l1mYW1SaVphNk9MaUdrRWhLYU1XUHdQcWhyMkxn", 
+          rP <- reproducible::prepInputs(url = "https://drive.google.com/open?id=0B_2riEic8l1mYW1SaVphNk9MaUdrRWhLYU1XUHdQcWhyMkxn", 
                            alsoExtract = "similar",
                            destinationPath = destinationFolder)
           return(rP)
         }
       } else {
         if (!is.null(specificTestArea)) {
-          rP <- prepInputs(url = "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip",
+          rP <- reproducible::prepInputs(url = "http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gpr_000b11a_e.zip",
                            targetFile = "gpr_000b11a_e.shp",
                            alsoExtract = "similar",
                            destinationPath = destinationFolder) %>%
