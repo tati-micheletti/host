@@ -1,0 +1,141 @@
+module,parameter,value,description
+LandR,p_size,32,package name size
+LandR,p_x,1,package name position x
+LandR,p_y,1.6,package name position y
+LandR,s_x,1,image position x
+LandR,s_y,0.75,image position y
+LandR,s_width,0.35,image width
+LandR,s_height,0.35,image height
+LandR,h_color,#78CC72,border color
+LandR,h_fill,#185408,filling color
+LandR,imageName,landR,name of the image in tati-micheletti/host/images
+LandR.CS,p_size,32,package name size
+LandR.CS,p_x,1,package name position x
+LandR.CS,p_y,1.6,package name position y
+LandR.CS,s_x,1,image position x
+LandR.CS,s_y,0.75,image position y
+LandR.CS,s_width,0.35,image width
+LandR.CS,s_height,0.35,image height
+LandR.CS,h_color,#78CC72,border color
+LandR.CS,h_fill,#185408,filling color
+LandR.CS,imageName,landR_CS,name of the image in tati-micheletti/host/images
+fireSense,p_size,32,package name size
+fireSense,p_x,1,package name position x
+fireSense,p_y,1.6,package name position y
+fireSense,s_x,1,image position x
+fireSense,s_y,0.75,image position y
+fireSense,s_width,0.35,image width
+fireSense,s_height,0.35,image height
+fireSense,h_color,#9B0303,border color
+fireSense,h_fill,#561616,filling color
+fireSense,imageName,fireSense,name of the image in tati-micheletti/host/images
+caribouRSF,p_size,32,package name size
+caribouRSF,p_x,1,package name position x
+caribouRSF,p_y,1.6,package name position y
+caribouRSF,s_x,1,image position x
+caribouRSF,s_y,0.75,image position y
+caribouRSF,s_width,0.35,image width
+caribouRSF,s_height,0.35,image height
+caribouRSF,h_color,#FF9B21,border color
+caribouRSF,h_fill,#FFE228,filling color
+caribouRSF,imageName,caribou,name of the image in tati-micheletti/host/images
+caribouLambda,p_size,32,package name size
+caribouLambda,p_x,1,package name position x
+caribouLambda,p_y,1.6,package name position y
+caribouLambda,s_x,1,image position x
+caribouLambda,s_y,0.75,image position y
+caribouLambda,s_width,0.35,image width
+caribouLambda,s_height,0.35,image height
+caribouLambda,h_color,#FF783A,border color
+caribouLambda,h_fill,#FF9B21,filling color
+caribouLambda,imageName,caribou,name of the image in tati-micheletti/host/images
+caribouTEK,p_size,32,package name size
+caribouTEK,p_x,1,package name position x
+caribouTEK,p_y,1.6,package name position y
+caribouTEK,s_x,1,image position x
+caribouTEK,s_y,0.75,image position y
+caribouTEK,s_width,0.35,image width
+caribouTEK,s_height,0.35,image height
+caribouTEK,h_color,#FF9B21,border color
+caribouTEK,h_fill,#FF783A,filling color
+caribouTEK,imageName,caribou,name of the image in tati-micheletti/host/images
+birds,p_size,32,package name size
+birds,p_x,1,package name position x
+birds,p_y,1.6,package name position y
+birds,s_x,1,image position x
+birds,s_y,0.75,image position y
+birds,s_width,0.35,image width
+birds,s_height,0.35,image height
+birds,h_color,#9D40E5,border color
+birds,h_fill,#60387F,filling color
+birds,imageName,birds,name of the image in tati-micheletti/host/images
+birds.CS,p_size,32,package name size
+birds.CS,p_x,1,package name position x
+birds.CS,p_y,1.6,package name position y
+birds.CS,s_x,1,image position x
+birds.CS,s_y,0.75,image position y
+birds.CS,s_width,0.35,image width
+birds.CS,s_height,0.35,image height
+birds.CS,h_color,#9D40E5,border color
+birds.CS,h_fill,#60387F,filling color
+birds.CS,imageName,birds_CS,name of the image in tati-micheletti/host/images
+carbon,p_size,32,package name size
+carbon,p_x,1,package name position x
+carbon,p_y,1.6,package name position y
+carbon,s_x,1,image position x
+carbon,s_y,0.75,image position y
+carbon,s_width,0.35,image width
+carbon,s_height,0.35,image height
+carbon,h_color,#C1C1C1,border color
+carbon,h_fill,#828282,filling color
+carbon,imageName,carbon,name of the image in tati-micheletti/host/images
+SCFM,p_size,32,package name size
+SCFM,p_x,1,package name position x
+SCFM,p_y,1.6,package name position y
+SCFM,s_x,1,image position x
+SCFM,s_y,0.75,image position y
+SCFM,s_width,0.35,image width
+SCFM,s_height,0.35,image height
+SCFM,h_color,#9B0303,border color
+SCFM,h_fill,#561616,filling color
+SCFM,imageName,SCFM,name of the image in tati-micheletti/host/images
+SCFM + fireSense,p_size,32,package name size
+SCFM + fireSense,p_x,1,package name position x
+SCFM + fireSense,p_y,1.6,package name position y
+SCFM + fireSense,s_x,1,image position x
+SCFM + fireSense,s_y,0.75,image position y
+SCFM + fireSense,s_width,0.35,image width
+SCFM + fireSense,s_height,0.35,image height
+SCFM + fireSense,h_color,#9B0303,border color
+SCFM + fireSense,h_fill,#561616,filling color
+SCFM + fireSense,imageName,fireSense_SCFM,name of the image in tati-micheletti/host/images
+MPB,p_size,32,package name size
+MPB,p_x,1,package name position x
+MPB,p_y,1.6,package name position y
+MPB,s_x,1,image position x
+MPB,s_y,0.75,image position y
+MPB,s_width,0.35,image width
+MPB,s_height,0.35,image height
+MPB,h_color,#B29239,border color
+MPB,h_fill,#7A6427,filling color
+MPB,imageName,MPB,name of the image in tati-micheletti/host/images
+trends,p_size,32,package name size
+trends,p_x,1,package name position x
+trends,p_y,1.6,package name position y
+trends,s_x,1,image position x
+trends,s_y,0.75,image position y
+trends,s_width,0.35,image width
+trends,s_height,0.35,image height
+trends,h_color,#4E5DB2,border color
+trends,h_fill,#162475,filling color
+trends,imageName,trends,name of the image in tati-micheletti/host/images
+climate,p_size,32,package name size
+climate,p_x,1,package name position x
+climate,p_y,1.6,package name position y
+climate,s_x,1,image position x
+climate,s_y,0.75,image position y
+climate,s_width,0.35,image width
+climate,s_height,0.35,image height
+climate,h_color,#3C4FBC,border color
+climate,h_fill,#8D99DD,filling color
+climate,imageName,climate,name of the image in tati-micheletti/host/images
