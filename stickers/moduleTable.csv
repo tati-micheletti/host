@@ -8,7 +8,7 @@ LandR,s_width,0.35,image width
 LandR,s_height,0.35,image height
 LandR,h_color,#78CC72,border color
 LandR,h_fill,#185408,filling color
-LandR,imageName,landR,name of the image in tati-micheletti/host/images
+LandR,imageName,LandR,name of the image in tati-micheletti/host/images
 LandR.CS,p_size,32,package name size
 LandR.CS,p_x,1,package name position x
 LandR.CS,p_y,1.6,package name position y
@@ -18,7 +18,7 @@ LandR.CS,s_width,0.35,image width
 LandR.CS,s_height,0.35,image height
 LandR.CS,h_color,#78CC72,border color
 LandR.CS,h_fill,#185408,filling color
-LandR.CS,imageName,landR_CS,name of the image in tati-micheletti/host/images
+LandR.CS,imageName,LandR_CS,name of the image in tati-micheletti/host/images
 fireSense,p_size,32,package name size
 fireSense,p_x,1,package name position x
 fireSense,p_y,1.6,package name position y
