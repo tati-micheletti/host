@@ -99,16 +99,16 @@ SCFM,s_height,0.35,image height
 SCFM,h_color,#9B0303,border color
 SCFM,h_fill,#561616,filling color
 SCFM,imageName,SCFM,name of the image in tati-micheletti/host/images
-SCFM + fireSense,p_size,32,package name size
-SCFM + fireSense,p_x,1,package name position x
-SCFM + fireSense,p_y,1.6,package name position y
-SCFM + fireSense,s_x,1,image position x
-SCFM + fireSense,s_y,0.75,image position y
-SCFM + fireSense,s_width,0.35,image width
-SCFM + fireSense,s_height,0.35,image height
-SCFM + fireSense,h_color,#9B0303,border color
-SCFM + fireSense,h_fill,#561616,filling color
-SCFM + fireSense,imageName,fireSense_SCFM,name of the image in tati-micheletti/host/images
+fireSense_SCFM,p_size,32,package name size
+fireSense_SCFM,p_x,1,package name position x
+fireSense_SCFM,p_y,1.6,package name position y
+fireSense_SCFM,s_x,1,image position x
+fireSense_SCFM,s_y,0.75,image position y
+fireSense_SCFM,s_width,0.35,image width
+fireSense_SCFM,s_height,0.35,image height
+fireSense_SCFM,h_color,#9B0303,border color
+fireSense_SCFM,h_fill,#561616,filling color
+fireSense_SCFM,imageName,fireSense_SCFM,name of the image in tati-micheletti/host/images
 MPB,p_size,32,package name size
 MPB,p_x,1,package name position x
 MPB,p_y,1.6,package name position y
