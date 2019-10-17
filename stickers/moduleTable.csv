@@ -181,7 +181,7 @@ waterfowl,h_fill,#B4BAE8,filling color
 waterfowl,imageName,waterfowl,name of the image in tati-micheletti/host/images
 development,p_size,32,package name size
 development,p_x,1,package name position x
-development,p_y,1.6,package name position y
+development,p_y,1.45,package name position y
 development,s_x,1,image position x
 development,s_y,0.75,image position y
 development,s_width,0.45,image width
