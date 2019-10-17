@@ -1,6 +1,6 @@
 
 # It is possible to locally load the table.
-moduleTable <- data.table::fread(file.path(directory, "stickers/moduleTable.csv"))
+moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
 
 #If the table is null on the moduleStiker call,
 # it will download automatically using reproducible::prepInputs.
