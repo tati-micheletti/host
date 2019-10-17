@@ -174,8 +174,18 @@ waterfowl,p_x,1,package name position x
 waterfowl,p_y,1.6,package name position y
 waterfowl,s_x,1,image position x
 waterfowl,s_y,0.75,image position y
-waterfowl,s_width,0.1,image width
-waterfowl,s_height,0.1,image height
-waterfowl,h_color,#4E5593,border color
-waterfowl,h_fill,#7C83BF,filling color
+waterfowl,s_width,0.45,image width
+waterfowl,s_height,0.45,image height
+waterfowl,h_color,#7C83BF,border color
+waterfowl,h_fill,#B4BAE8,filling color
 waterfowl,imageName,waterfowl,name of the image in tati-micheletti/host/images
+development,p_size,32,package name size
+development,p_x,1,package name position x
+development,p_y,1.6,package name position y
+development,s_x,1,image position x
+development,s_y,0.75,image position y
+development,s_width,0.45,image width
+development,s_height,0.45,image height
+development,h_color,#828282,border color
+development,h_fill,#191919,filling color
+development,imageName,anthro,name of the image in tati-micheletti/host/images
