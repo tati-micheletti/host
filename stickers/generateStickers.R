@@ -2,6 +2,11 @@
 # It is possible to locally load the table.
 moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
 
+library("hexSticker")
+library("showtext")
+library("sysfonts")
+library("reproducible")
+
 #If the table is null on the moduleStiker call,
 # it will download automatically using reproducible::prepInputs.
 
@@ -19,7 +24,8 @@ moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
 # moduleSticker(moduleName = "trends", moduleTable = moduleTable)
 # moduleSticker(moduleName = "MPB", moduleTable = moduleTable)
 # moduleSticker(moduleName = "hotspot", moduleTable = moduleTable)
-moduleSticker(moduleName = "harvest", moduleTable = moduleTable)
-moduleSticker(moduleName = "diversity", moduleTable = moduleTable)
-moduleSticker(moduleName = "caribou", moduleTable = moduleTable)
+# moduleSticker(moduleName = "harvest", moduleTable = moduleTable)
+# moduleSticker(moduleName = "diversity", moduleTable = moduleTable)
+# moduleSticker(moduleName = "waterfowl", moduleTable = moduleTable)
+moduleSticker(moduleName = "development", moduleTable = moduleTable)
 
