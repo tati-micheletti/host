@@ -40,7 +40,7 @@ caribouRSF,h_color,#FF9B21,border color
 caribouRSF,h_fill,#FFE228,filling color
 caribouRSF,imageName,antlers,name of the image in tati-micheletti/host/images
 caribouLambda,p_size,32,package name size
-caribouLambda,p_x,1,package name position x
+caribouLambda,p_x,0.8,package name position x
 caribouLambda,p_y,1.55,package name position y
 caribouLambda,s_x,1.15,image position x
 caribouLambda,s_y,0.85,image position y
@@ -154,18 +154,28 @@ harvest,p_x,1,package name position x
 harvest,p_y,1.6,package name position y
 harvest,s_x,1,image position x
 harvest,s_y,0.7,image position y
-harvest,s_width,0.7,image width
-harvest,s_height,0.7,image height
+harvest,s_width,0.45,image width
+harvest,s_height,0.45,image height
 harvest,h_color,#436436,border color
 harvest,h_fill,#5EB548,filling color
 harvest,imageName,harvest,name of the image in tati-micheletti/host/images
 diversity,p_size,32,package name size
 diversity,p_x,1,package name position x
 diversity,p_y,1.6,package name position y
-diversity,s_x,1,image position x
-diversity,s_y,0.7,image position y
-diversity,s_width,0.6,image width
-diversity,s_height,0.6,image height
-diversity,h_color,#E03C73,border color
-diversity,h_fill,#E0A1B6,filling color
+diversity,s_x,1.08,image position x
+diversity,s_y,0.77,image position y
+diversity,s_width,0.5,image width
+diversity,s_height,0.5,image height
+diversity,h_color,#828282,border color
+diversity,h_fill,#515151,filling color
 diversity,imageName,diversity,name of the image in tati-micheletti/host/images
+waterfowl,p_size,32,package name size
+waterfowl,p_x,1,package name position x
+waterfowl,p_y,1.6,package name position y
+waterfowl,s_x,1,image position x
+waterfowl,s_y,0.75,image position y
+waterfowl,s_width,0.1,image width
+waterfowl,s_height,0.1,image height
+waterfowl,h_color,#4E5593,border color
+waterfowl,h_fill,#7C83BF,filling color
+waterfowl,imageName,waterfowl,name of the image in tati-micheletti/host/images
