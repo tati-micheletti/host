@@ -1,4 +1,3 @@
-
 # It is possible to locally load the table.
 moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
 
