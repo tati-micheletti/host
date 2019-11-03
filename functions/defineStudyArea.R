@@ -1,5 +1,5 @@
 #' @title
-#' Preparing study area for canadian projects
+#' Preparing study area for Canadian projects
 #' 
 #' @description
 #' Downloads, reprojects, crops and masks to speficic areas in canada such as: 
