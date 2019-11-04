@@ -5,6 +5,7 @@ library("hexSticker")
 library("showtext")
 library("sysfonts")
 library("reproducible")
+library("usefun")
 
 #If the table is null on the moduleStiker call,
 # it will download automatically using reproducible::prepInputs.
@@ -26,5 +27,6 @@ library("reproducible")
 # moduleSticker(moduleName = "harvest", moduleTable = moduleTable)
 # moduleSticker(moduleName = "diversity", moduleTable = moduleTable)
 # moduleSticker(moduleName = "waterfowl", moduleTable = moduleTable)
-moduleSticker(moduleName = "development", moduleTable = moduleTable)
+# moduleSticker(moduleName = "development", moduleTable = moduleTable)
+moduleSticker(moduleName = "SBW", moduleTable = moduleTable)
 
