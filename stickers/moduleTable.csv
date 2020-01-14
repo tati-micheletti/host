@@ -200,3 +200,13 @@ SBW,h_color,#7A6427,border color
 SBW,h_fill,#603800,filling color
 SBW,imageName,SBW,name of the image in tati-micheletti/host/images
 SBW,asp,2,Aspect parameter
+roads,p_size,32,package name size
+roads,p_x,1,package name position x
+roads,p_y,1.45,package name position y
+roads,s_x,1,image position x
+roads,s_y,0.75,image position y
+roads,s_width,0.45,image width
+roads,s_height,0.45,image height
+roads,h_color,#478937,border color
+roads,h_fill,#617758,filling color
+roads,imageName,roadNetwork,name of the image in tati-micheletti/host/images
