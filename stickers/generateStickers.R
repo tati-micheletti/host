@@ -1,5 +1,6 @@
 # It is possible to locally load the table.
-moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
+moduleTable <- data.table::fread(file.path(dirname(getwd()), "host", "stickers/moduleTable.csv"))
+# moduleTable <- data.table::fread(file.path(getwd(), "stickers/moduleTable.csv"))
 
 library("hexSticker")
 library("showtext")
@@ -17,7 +18,7 @@ library("usefun")
 # moduleSticker(moduleName = "birds", moduleTable = moduleTable)
 # moduleSticker(moduleName = "birds.CS", moduleTable = moduleTable)
 # moduleSticker(moduleName = "caribouRSF", moduleTable = moduleTable, savedSticker = "caribouRSF")
-moduleSticker(moduleName = "caribouIEK", moduleTable = moduleTable, savedSticker = "caribouIEK")
+# moduleSticker(moduleName = "caribouIEK", moduleTable = moduleTable, savedSticker = "caribouIEK")
 # moduleSticker(moduleName = "caribouLambda", moduleTable = moduleTable, savedSticker = "caribouLambda")
 # moduleSticker(moduleName = "carbon", moduleTable = moduleTable)
 # moduleSticker(moduleName = "climate", moduleTable = moduleTable)
@@ -29,4 +30,5 @@ moduleSticker(moduleName = "caribouIEK", moduleTable = moduleTable, savedSticker
 # moduleSticker(moduleName = "waterfowl", moduleTable = moduleTable)
 # moduleSticker(moduleName = "development", moduleTable = moduleTable)
 # moduleSticker(moduleName = "SBW", moduleTable = moduleTable)
+moduleSticker(moduleName = "roads", moduleTable = moduleTable)
 
