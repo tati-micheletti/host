@@ -75,7 +75,7 @@ p <- ggplot() +
                                                     "Priority Places" = "#5D5BA0",
                                                     "Mountain Pine Beetle" = "#7A6427",
                                                     "Spruce Budworm" = "#603800",
-                                                    "Carbon" = "#939393",
+                                                    "Carbon Budget Model" = "#939393",
                                                     "Anthropogenic Disturbances" = "#07051E"))
 
 p
