@@ -32,49 +32,56 @@ bb <- unique(DT, by = c("subjects", "plotColors"))
 colrs <- bb$plotColors
 names(colrs) <- bb$subjects
 
+milestonesNumber <- c(1,4,7,8,11,14,15,18,21,22,25,28)
+toMergeDT <- data.table(composedMilestone = composedMilestone,
+                        milestonesNumber = milestonesNumber)
+DT <- merge(DT, toMergeDT, by = "composedMilestone", all.x = TRUE)
+
 ## this version shades in the regions of the graph corresponding to "version" and has the correspondent colors to the hex stickers
 p <- ggplot() + 
-  geom_col(data = DT[Year == 2019],
+  geom_col(data = DT[Year == 2020],
            mapping = aes(x = subjects, 
-                         y = composedMilestone, 
+                         y = milestonesNumber, 
                          fill = subjects),
            position = position_dodge2(reverse = TRUE),
            alpha = 1) +
   geom_col(data = DT[Year == 2021],
            mapping = aes(x = subjects, 
-                         y = composedMilestone, 
+                         y = milestonesNumber, 
                          fill = subjects),
            position = position_dodge2(reverse = TRUE),
            alpha = 0.6) +
-  geom_col(data = DT[Year == 0],
+  geom_col(data = DT[Year == 2022],
            mapping = aes(x = subjects, 
-                         y = composedMilestone, 
+                         y = milestonesNumber, 
                          fill = subjects),
            position = position_dodge2(reverse = TRUE),
            alpha = 0.4) +
   coord_flip() +
-  geom_hline(yintercept = c(3, 6, 9), lty = 3) +
+  geom_hline(yintercept = c(7, 14, 21, 28), lty = 3) +
   ylab(label = "Version and milestone") +
   theme(legend.text = element_text(size = 11),
         legend.title = element_text(size = 13),
         legend.position = "none",
         axis.title.y = element_blank(),
         legend.background = element_blank(), 
-        text = element_text(size = 18)) +
-  scale_y_discrete(limits = factor(composedMilestone, 
-                                   levels = composedMilestone)) +
+        text = element_text(size = 16),
+        panel.grid.minor = element_blank()) +
+  # scale_y_discrete(limits = factor(milestonesNumber, 
+  #                                  levels = milestonesNumber)) +
+  scale_y_continuous(breaks = milestonesNumber, 
+                     labels = composedMilestone) +
   scale_x_discrete(limits = factor(rev(subs), 
                                    levels = rev(subs))) +
   facet_grid(. ~ nature) +
   scale_fill_manual("Module's families", values = colrs)
-
 p
 
 ggsave(filename = file.path(wd, "modulesStatus.png"),
        plot = p,
        device = "png",
        scale = 1,
-       width = 30,
+       width = 45,
        height = 15,
        units = "cm",
        dpi =  300)
