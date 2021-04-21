@@ -28,7 +28,10 @@ DT[, composedMilestone  := factor(paste0(version, milestone), levels = composedM
 DT[, subjects  := factor(subjects, unique(DT$subjects))]
 DT[, nature  := factor(nature, c("module", "data"))]
 subs <- as.character(unique(DT[["subjects"]]))
- 
+bb <- unique(DT, by = c("subjects", "plotColors"))
+colrs <- bb$plotColors
+names(colrs) <- bb$subjects
+
 ## this version shades in the regions of the graph corresponding to "version" and has the correspondent colors to the hex stickers
 p <- ggplot() + 
   geom_col(data = DT[Year == 2019],
@@ -63,20 +66,7 @@ p <- ggplot() +
   scale_x_discrete(limits = factor(rev(subs), 
                                    levels = rev(subs))) +
   facet_grid(. ~ nature) +
-  scale_fill_manual("Module's families", values = c("Forest Dynamics (LandR)" = "#3A8426",
-                                                    "Wildfire (fireSense)" = "#962A2A",
-                                                    "Wildfire (SCFM)" = "#CC3737",
-                                                    "Caribou Population Growth" = "#FFB523",
-                                                    "Caribou Resource Selection" = "#FFE228",
-                                                    "Caribou Indigenous Knowledge" = "#FF783A",
-                                                    "Landbirds" = "#60387F",
-                                                    "Waterfowl" = "#637DB5",
-                                                    "Harvesting" = "#88C95C",
-                                                    "Priority Places" = "#5D5BA0",
-                                                    "Mountain Pine Beetle" = "#7A6427",
-                                                    "Spruce Budworm" = "#603800",
-                                                    "Carbon Budget Model" = "#939393",
-                                                    "Anthropogenic Disturbances" = "#07051E"))
+  scale_fill_manual("Module's families", values = colrs)
 
 p
 
